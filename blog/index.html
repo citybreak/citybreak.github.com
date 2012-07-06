@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: blog_default
 ---
+
+Blog main page.
 
 <div class="article-navigation">
   {% for item in site.categories.articles limit:40 offset:0 %}
@@ -10,7 +12,7 @@ layout: default
   {% endfor %}
 </div>
 
-{% for item in site.categories.articles limit:1 offset:0 %}
+<!-- {% for item in site.categories.articles limit:1 offset:0 %}
   <div class="intro">
     <div class="title">{{item.title}}</div>
     <div class="abstract">{{item.abstract}}</div>
@@ -22,4 +24,4 @@ layout: default
       {{ item.content }}
     </div>
   </div>
-{% endfor %}
+{% endfor %} -->
