@@ -165,6 +165,21 @@ nav.header-nav {
   color: #939799;
 }
 
+.pager-nav a {
+  position: absolute;
+  margin-top: 376px;
+  top: 0;
+  z-index: 3;
+}
+
+.pager-nav a[rel="prev"]{
+  left: 30px;
+}
+
+.pager-nav a[rel="next"]{
+  right: 30px;
+}
+
 #main {
   padding-top: 60px;
   overflow:auto;
