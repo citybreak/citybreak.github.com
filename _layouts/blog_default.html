@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="header-nav">
       <a class="home-link" href="{{site.baseurl}}">City Break</a>
-      <ul class="menu-list">
+      <ul class="nav-list">
          <li class="nav-item">
             <a href="{{site.baseurl}}/blog/events" class="nav-link" id="events-nav-link">            
               <i class="nav-icon-home"></i>
@@ -53,22 +53,24 @@
     {% endif %} 
   </nav> 
 
-  <div id='container'>
-    <div id='main'>{{content}}</div>
+  <div id='container' class="main-content">
+    {{content}}
   </div>
 
-  <div id='footer'>
-    <div class="footer-content">
-      <p>
-        Made by <a href="http://citybreakhostel.rs">City Break Hostel</a>.
-      </p>  
+  <footer class="main-footer">
+    <nav class="footer-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="{{site.baseurl}}">Home</a></li>
+        <li class="nav-item"><a href="{{site.baseurl}}/blog">Blog</a></li>
+      </ul>
+      <p class="copyright">2011-2012 City Break Hostel.</p>
       <small>Except where otherwise noted, content on
         <span href="http://creativecommons.org" property="cc:attributionName" rel="cc:attributionURL">this site</span> 
         is licensed under a 
         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" class="subfoot">Creative Commons Attribution 3.0 License</a>.
-    </small>      
-    </div>
-  </div>
+      </small>
+    </nav>
+  </footer>
 
 </body>
 </html>

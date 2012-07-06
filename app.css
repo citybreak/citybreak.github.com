@@ -122,6 +122,13 @@ p {
   Globals
 ---------------------------------------------*/
 
+.header-nav,
+.footer-nav,
+.main-content {
+  width: 1020px;
+  margin: 0 auto;
+}
+
 /* Top Branding/Navigation */
 header.main-header {
   position: absolute;
@@ -138,12 +145,11 @@ header.main-header {
   height: 130px;  
 }
 
-nav.header-nav {
+.header-nav {
   position: relative;
-  width: 1020px;
-  margin: 0 auto;
 }
-.menu-list .nav-item {
+
+.nav-list .nav-item {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -180,15 +186,27 @@ nav.header-nav {
   right: 30px;
 }
 
-#main {
-  padding-top: 60px;
-  overflow:auto;
-  padding-bottom: 60px; /* must be same height as the footer */
-  }
 
-#post .inner  {
-  position: relative;
-  }
+
+
+
+.main-content {
+  background: white no-repeat;
+  border-bottom: 1px solid white;
+  -moz-box-shadow: 0 0 3px #e1e1e3;
+  -webkit-box-shadow: 0 0 3px #E1E1E3;
+  -o-box-shadow: 0 0 3px #e1e1e3;
+  box-shadow: 0 0 3px #E1E1E3;
+  margin-top: 150px;
+}
+
+/** Footer */
+.main-footer {
+  text-align: center;
+}
+
+
+
 
 /* ------------------------------------------
   Footer - a sticky one
@@ -201,40 +219,9 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
 
 #container { 
   min-height: 100%;
-  min-width: 800px;
   }
 
-#footer {
 
-  position: relative;
-  margin-top: -60px; /* negative value of footer height */
-  height: 120px;
-  overflow: hidden;
-  line-height: 60px;
-  border-top: 1px solid #c3ccd0;
-  clear:both;
-  }
-
-#footer .footer-content {
-  width: 800px;
-  margin: 0 auto;
-  font-size: 15px;
-  }
-
-#footer a.help, #footer a.about{ 
-  margin-right: 20px;
-  padding-left: 20px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-image: url('images/sprite.png');
-  }
-  a.about { background-position: 0 -959px; }
-  a.help { background-position: 0 -1049px; }
-
-#footer .footer-content p {
-  margin: 16px 0;
-  }
   
 /*Opera Fix*/
 body:before {/* thanks to Maleika (Kohoutec)*/
@@ -252,69 +239,8 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 
 
-.article-navigation {
-  width: 800px;
-  margin: 0 auto;
-  margin-top: 30px;
-  overflow: auto;
-}
 
-.article-navigation .article-link {
-  display: block;
-  float: left;
-  height: 30px;
-  width: 30px;
 
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-
-  background: rgba(0,0,0, 0.3);
-  
-  border: 3px solid #fff;
-  margin-right: 10px;
-}
-
-.article-link:hover, .article-link.active {
-  background: #078FA2;
-}
-
-.article-wrapper {
-  background: #fff;
-  padding-bottom: 50px;
-}
-
-.intro {
-  margin-top: 50px;
-  background: #E0E7EB;
-  /*background: #fff;*/
-  padding: 40px;
-  padding-bottom: 20px;
-
-  border-top: 1px solid #c3ccd0;
-  border-bottom: 1px solid #c3ccd0;
-}
-
-.intro .title {
-  width: 800px;
-  margin: 20px auto;
-  font-size: 36px; 
-  margin-bottom: 10px; 
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
-.intro .abstract {
-  width: 800px;
-  font-size: 20px;
-  margin: 20px auto;
-}
-
-.intro .meta {
-  width: 800px;
-  margin: 20px auto;
-  padding-top: 20px;
-}
 
 .post-content {
   width: 800px;
