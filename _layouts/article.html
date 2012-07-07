@@ -3,12 +3,29 @@ layout: blog_default
 ---
 
 
-<aside class="intro">
-  <div class="title">{{page.title}}</div>
-  <div class="abstract">{{page.abstract}}</div>
-  <div class="meta"> Posted by <a href="http://twitter.com/{{page.author_twitter}}">{{page.author}}</a> on {{ page.date | date: "%B %d, %Y" }} </div>
+<aside class="post-meta">
+  <a href="http://twitter.com/{{page.author_twitter}}">{{page.author}}</a>
+  <time datetime="{{page.date}}" pubdate="true">{{ page.date | date: "%B %d, %Y" }}</time>
 </aside>
 
-<section class="post-content main-content">
+<aside class="user-engaging-component">
+  <section class="social-sharing">
+    <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+  </section>
+
+  <section class="related-post">
+    <nav>
+    {% for item in site.categories.events limit:40 offset:0 %}
+      <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+    {% endfor %}
+    </nav>
+  </section>  
+</aside>
+
+<article class="post-content main-content">
+  <header>
+    <h1>{{page.title}}</h1>
+    <h2>{{page.abstract}}</h2>
+  </header> 
   {{ content }}
-</section>
+</article>

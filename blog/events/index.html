@@ -5,7 +5,7 @@ layout: blog_default
 <nav class="article-navigation">
   {% for item in site.categories.events limit:40 offset:0 %}
     <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-      <img width="160px" height="120px" src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}">	
+    <img width="160px" height="120px" src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}">
     </a>
   {% endfor %}
 </nav>

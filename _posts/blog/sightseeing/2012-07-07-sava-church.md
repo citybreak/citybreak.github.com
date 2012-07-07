@@ -8,6 +8,7 @@ categories:
 - blog
 - sightseeing
 published: true
+image: http://farm4.staticflickr.com/3549/3770037751_9142ab41b1_z.jpg
 ---
 
 

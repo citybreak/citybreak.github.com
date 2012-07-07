@@ -240,8 +240,15 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   Article
 ---------------------------------------------*/
 
+.post-meta{
+  position: absolute;
+  left: 10px;
+}
 
-
+.user-engaging-component{
+  position: absolute;
+  right: 10px;
+}
 
 /* ------------------------------------------
   Class Helpers
