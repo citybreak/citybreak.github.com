@@ -124,13 +124,14 @@ p {
 
 .header-nav,
 .footer-nav,
-.main-content {
+.main-content,
+.page {
   width: 1020px;
   margin: 0 auto;
 }
 
 /* Top Branding/Navigation */
-header.main-header {
+.main-header {
   position: absolute;
   top: 0;
   width: 100%;
@@ -161,7 +162,7 @@ header.main-header {
 }
  
 .main-header .menu-list .nav-item {
-  width: 208px;
+  width: 210px;
 }
 
 .nav-item .tagline {
@@ -197,13 +198,9 @@ header.main-header {
   -webkit-box-shadow: 0 0 3px #E1E1E3;
   -o-box-shadow: 0 0 3px #e1e1e3;
   box-shadow: 0 0 3px #E1E1E3;
-  margin-top: 150px;
 }
 
-/** Footer */
-.main-footer {
-  text-align: center;
-}
+
 
 
 
@@ -212,15 +209,21 @@ header.main-header {
   Footer - a sticky one
 ---------------------------------------------*/
 
+.main-footer {
+  text-align: center;
+}
+
+
 
 /* must declare 0 margins on everything, also for main layout components use padding, not 
 vertical margins (top and bottom) to add spacing, else those margins get added to total height 
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
-#container { 
+.page { 
   min-height: 100%;
-  }
+  margin-top: 150px;
 
+}
 
   
 /*Opera Fix*/
@@ -239,96 +242,6 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 
 
-
-
-
-.post-content {
-  width: 800px;
-  margin: 0px auto;
-  padding: 20px 0;
-  font-family: 'OpenSans', sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  }
-
-.post-content * {
-  line-height: 1.2em;
-  }
-
-.post-content p, .post-content ul, .post-content ol,  .post-content li {
-  line-height: 1.5em;
-  }
-
-
-.post-content h1 { font-size: 36px; margin: 10px 0 20px 0; }
-.post-content h2 { font-size: 24px; margin: 10px 0 20px 0; font-weight: bold; padding: 0; }
-.post-content h3, .post-content h4, .post-content h5, .post-content h6 { 
-  text-transform: none;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  }
-  
-.post-content blockquote {
-  padding-left: 19px;
-  border-left: 1px solid #C3CCD0;
-  font-style: italic;
-  margin-bottom: 20px;
-  }
-
-.post-content ul {
-  margin-left: 0px;
-  padding-left: 20px;
-  list-style: disc;
-  }
-
-.post-content ol {
-  margin-left: 0px;
-  padding-left: 20px;
-  list-style: decimal;
-  }
-
-.post-content img {
-  max-width: 100%;
-  }
-
-.post-content a {
-  border-bottom: 1px dashed #C3CCD0;
-  font-weight: normal;
-  }
-
-.post-content p {
-  margin-bottom: 20px;
-  }
-
-.post-content p:last-child {
-  margin-bottom: 20px;
-  }
-  
-.post-content code {
-  font-family: Menlo, monospace;
-  padding: 4px;
-  border-radius: 3px;
-  font-size: 12px;
-  border: 1px solid #C3CCD0;
-  }
-
-.post-content pre {
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #C3CCD0;
-  }
-
-.post-content pre code {
-  border: none;
-  }
-
-.post-content hr {
-  margin: 5px 0 4px 0;
-  border-top: 1px solid #C3CCD0;
-  border-bottom: 0;
-  border-radius: 5px;
-  }
 
 /* ------------------------------------------
   Class Helpers
