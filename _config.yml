@@ -1,6 +1,7 @@
 auto: true
 server: true
 permalink: none
+disqus_name: citybreakdev
 baseurl: ""
 exclude:
 - .gitignore
