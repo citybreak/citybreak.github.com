@@ -222,7 +222,6 @@ and your footer gets pushed down a bit more, creating vertical scroll bars in th
 .page { 
   min-height: 100%;
   margin-top: 150px;
-
 }
 
   
@@ -250,6 +249,36 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   right: 10px;
 }
 
+.post-content {
+  padding: 50px 60px 40px;
+}
+.post-content .post-header{
+  color: #AAA;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EBEBEB;
+  position: relative;
+}
+
+
+
+.post-content img{
+  display: inline-block;
+  position: relative;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  background: #F6F8FB;
+  margin: 0 auto 30px;
+  text-space-collapse: trim-inner;
+  line-height: 0;
+  max-width: 100%;
+  text-align: center;
+}
+
+.event-post .map {
+  text-align: center;
+}
 /* ------------------------------------------
   Class Helpers
 ---------------------------------------------*/
