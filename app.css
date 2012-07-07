@@ -122,6 +122,7 @@ p {
   Globals
 ---------------------------------------------*/
 
+
 .header-nav,
 .footer-nav,
 .main-content,
@@ -258,11 +259,12 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   padding-bottom: 20px;
   border-bottom: 1px solid #EBEBEB;
   position: relative;
+  margin-bottom: 20px;
 }
 
 
 
-.post-content img{
+.post-content img {
   display: inline-block;
   position: relative;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -279,6 +281,25 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 .event-post .map {
   text-align: center;
 }
+
+.event-post .details {
+  margin: 0 0 21px;
+  background: white;
+  border: 1px solid #D2DEEC;
+  padding: 10px 15px;
+  width: 300px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 #fff;
+  box-shadow: 0 1px 0 white;
+}
+
+.event-post .details span {
+  font-weight: bold;
+}
+
 /* ------------------------------------------
   Class Helpers
 ---------------------------------------------*/

@@ -2,30 +2,37 @@
 layout: blog_default
 ---
 
+<section itemscope itemtype="http://schema.org/Article">
+  <meta itemprop="image" content="{{page.image}}"/>
+  <aside class="post-meta">
+    <a href="http://twitter.com/{{page.author_twitter}}" itemprop="author">{{page.author}}</a>
+    <time datetime="{{page.date}}" pubdate="true" itemprop="datePublished" content="{{page.date}}">
+      {{ page.date | date: "%B %d, %Y" }}
+    </time>
+  </aside>
 
-<aside class="post-meta">
-  <a href="http://twitter.com/{{page.author_twitter}}">{{page.author}}</a>
-  <time datetime="{{page.date}}" pubdate="true">{{ page.date | date: "%B %d, %Y" }}</time>
-</aside>
+  <aside class="user-engaging-component">
+    <section class="social-sharing">
+      <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+    </section>
 
-<aside class="user-engaging-component">
-  <section class="social-sharing">
-    <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-  </section>
+    <section class="related-post">
+      <nav>
+      {% for item in site.categories.events limit:40 offset:0 %}
+        <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+      {% endfor %}
+      </nav>
+    </section>  
+  </aside>
 
-  <section class="related-post">
-    <nav>
-    {% for item in site.categories.events limit:40 offset:0 %}
-      <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
-    {% endfor %}
-    </nav>
-  </section>  
-</aside>
+  <article class="post-content main-content">
+    <header class="post-header">
+      <h1 itemprop="name">{{page.title}}</h1>
+      <h2 itemprop="description">{{page.abstract}}</h2>
+    </header>
+    <section class="post-body" itemprop="articleBody"> 
+      {{ content }}
+    </section>
+  </article>
 
-<article class="post-content main-content">
-  <header class="post-header">
-    <h1>{{page.title}}</h1>
-    <h2>{{page.abstract}}</h2>
-  </header> 
-  {{ content }}
-</article>
+</section>
