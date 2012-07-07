@@ -48,6 +48,7 @@ html {
 ---------------------------------------------*/
 html,body {
   color: #7A8387;
+  background: #E7EEF2;
   -webkit-font-smoothing: antialiased;
   height: 100%;
   line-height: 1.5em;
@@ -198,7 +199,8 @@ p {
   -moz-box-shadow: 0 0 3px #e1e1e3;
   -webkit-box-shadow: 0 0 3px #E1E1E3;
   -o-box-shadow: 0 0 3px #e1e1e3;
-  box-shadow: 0 0 3px #E1E1E3;
+  border: 1px solid #C3CCD0;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
