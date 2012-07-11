@@ -1,0 +1,34 @@
+---
+---
+[
+{% for item in site.categories.events %}
+  {
+    "title": "{{item.title}}",
+    "subtitle": "{{item.abstract}}",
+    "category": "{{item.categories[0]}}",
+    "author": "{{item.author}}",
+    "url": "{{item.url}}",
+    "date": "{{item.date}}"
+  }, 
+{% endfor %}
+{% for item in site.categories.cuisine %}
+  {
+    "title": "{{item.title}}",
+    "subtitle": "{{item.abstract}}",
+    "category": "{{item.categories[0]}}",
+    "author": "{{item.author}}",
+    "url": "{{item.url}}",
+    "date": "{{item.date}}"
+  }, 
+{% endfor %}
+{% for item in site.categories.sighseeing %}
+  {
+    "title": "{{item.title}}",
+    "subtitle": "{{item.abstract}}",
+    "category": "{{item.categories[0]}}",
+    "author": "{{item.author}}",
+    "url": "{{item.url}}",
+    "date": "{{item.date}}"
+  }, {% endfor %}
+false
+]

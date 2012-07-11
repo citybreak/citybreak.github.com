@@ -41,7 +41,11 @@
               <span class="tagline">Sightseeing in Belgrade.</span>
             </a>
          </li> 
-      </ul> 
+      </ul>
+      <div id="search">
+        <a href="#search"><i class="icon search waiting"></i><i class="icon close searching"></i></a>
+        <div class="searching"><i class="icon search"></i><input type="text"></div>
+      </li>       
     </nav>
   </header> 
   <nav class="pager-nav"> 
@@ -58,6 +62,13 @@
 
   <div class="page">
     {{content}}
+  </div>
+
+  <div id="search-results">
+    <h1>Search</h1>
+    <div class="empty active">No results found.</div>
+    <div class="about"><span class="label">About</span><ul></ul></div>
+    <div class="blog"><span class="label">Blog</span><ul></ul></div>
   </div>
 
   <footer class="main-footer">
