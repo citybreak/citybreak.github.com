@@ -191,6 +191,16 @@ p {
 
 
 
+/** Search */
+#search {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#search-results {
+  display: none;
+}
+
 
 
 .main-content {
@@ -280,6 +290,15 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   text-align: center;
 }
 
+.post-content img:nth-child(odd) {
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.post-content img:nth-child(even) {
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
 .event-post .map {
   text-align: center;
 }
@@ -296,6 +315,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   -webkit-box-shadow: 0 1px 0 white;
   -moz-box-shadow: 0 1px 0 #fff;
   box-shadow: 0 1px 0 white;
+  margin-left: -80px;
 }
 
 .event-post .details span {
