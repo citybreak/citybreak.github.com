@@ -78,30 +78,7 @@ a:focus {
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   }
-h4, h5, h6 {
-  }
 
-
-h1 small { font-size: 13px; font-weight: normal; }
-h2 { 
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 21px;
-  margin-top: 39px;
-  margin-bottom: 24px;
-  }
-h2 small { font-size: 16px; font-weight: normal; }
-h3 { 
-  font-size: 11px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 10px;
-  }
-
-h3 small { font-size: 14px; font-weight: normal; }
-h4 { font-size: 14px; }
-h5 { font-size: 13px; }
-h6 { font-size: 11px; font-weight: normal; }
 
 /* Use border-box box model */
 
@@ -161,6 +138,10 @@ html {
   width: 210px;
 }
 
+.main-header .nav-item strong {
+  font-size: 30px;
+  line-height: 42px;
+}
 .nav-item .tagline {
   display: block;
   font-size: 12px;
@@ -206,9 +187,6 @@ html {
   border: 1px solid #dedede;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 
 
@@ -297,7 +275,6 @@ body:before {/* thanks to Maleika (Kohoutec)*/
     max-width: 100%;
 }
 
-
 .event-post .map {
   text-align: center;
 }
@@ -320,48 +297,3 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 .event-post .details span {
   font-weight: bold;
 }
-
-/* ------------------------------------------
-  Class Helpers
----------------------------------------------*/
-.clearfix:after {
-  content: '.';
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  }
-
-* html .clearfix { height: 1%; } /* IE6 */
-*:first-child + html .clearfix { min-height: 1%; } /* IE7 */
-
-.icon {
-  background: transparent url(images/icons.png) no-repeat 0 0;
-  width: 20px;
-  height: 20px;
-  display: block;
-  text-indent: -999em;
-  }
-.fl { float: left; }
-.fr { float: right; }
-.clear { clear: both; }
-
-.inner      { padding: 0px 0px 40px; }
-.hidden     { display: none; }
-.centered   { text-align: center; }
-.scrolling  { overflow: auto; }
-.clipping   { overflow: hidden; }
-
-/* ------------------------------------------
-  ios and small screen alterations
----------------------------------------------*/
- @media all and (max-width: 480px) {
-  #post .inner {
-    width: 100%;
-    margin: 0;
-    padding: 20px 0 40px;
-    }
-  .toggle-mode {
-    right: 0;
-    }
-  }
