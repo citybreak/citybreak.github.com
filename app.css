@@ -57,7 +57,7 @@ html,body {
 
 
 a {
-  color: #526066;
+  color: #b306cc;
   text-decoration: none;
   -moz-transition: background 100ms linear, color 100ms linear;
   -o-transition: background 100ms linear, color 100ms linear;
@@ -65,7 +65,7 @@ a {
   transition: background 100ms linear, color 100ms linear;
   }
 a:hover {
-  color: #3d4548;
+  color: #b306cc;
   }
 
 a:focus {
@@ -74,7 +74,6 @@ a:focus {
   outline-offset: -2px;
   }
 
-p > a {font-weight: bold;}
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
@@ -272,36 +271,31 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 
 .post-image {
-  background: #eee;
+  background: #fff;
   border: 1px solid #fff;
+  padding: 5px;
   -moz-box-shadow: 0px 2px 15px #333;
   -webkit-box-shadow: 0px 2px 15px #333;
   box-shadow: 0px 2px 15px #333;
-}
-
-.post-content img {
-  display: inline-block;
-  position: relative;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  background: #F6F8FB;
   margin: 0 auto 30px;
-  text-space-collapse: trim-inner;
   line-height: 0;
-  max-width: 100%;
   text-align: center;
 }
 
-.post-content img:nth-child(odd) {
+.post-image:nth-child(odd) {
   -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
 }
 
-.post-content img:nth-child(even) {
+.post-image:nth-child(even) {
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);
 }
+.post-content img {
+    max-width: 100%;
+}
+
+
 .event-post .map {
   text-align: center;
 }
