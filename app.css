@@ -242,9 +242,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 .post-content {
   position: relative;
-  padding: 51px 130px 60px 60px;
+  padding: 51px 130px 50px 60px;
   background: url(/assets/images/post-background.png);
   background-color: #fefff8;
+  margin-bottom: 50px;
 }
 .post-content .post-header{
   color: #222222;
@@ -286,7 +287,6 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 .event-post .details {
-  margin: 0 0 21px;
   background: #ebfdd4;
   border: 1px solid #78cc06;
   padding: 10px 15px;
@@ -297,7 +297,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   -webkit-box-shadow: 0 1px 0 white;
   -moz-box-shadow: 0 1px 0 #fff;
   box-shadow: 0 1px 0 white;
-  margin-left: -80px;
+  margin-left: -70px;
 }
 
 .event-post .details span {
