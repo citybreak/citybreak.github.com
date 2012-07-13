@@ -132,11 +132,9 @@ html {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
+  margin: 0 25px;
 }
  
-.main-header .menu-list .nav-item {
-  width: 210px;
-}
 
 .main-header .nav-item strong {
   font-size: 30px;
@@ -227,6 +225,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 .post-meta{
   position: absolute;
   right: 10px;
+  width: 100px;
+  border-left: 1px #b306cc solid;
+  bottom: 0;
+  top: 0;
 }
 
 .user-engaging-component{
