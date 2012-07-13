@@ -50,7 +50,7 @@ html,body {
   color: #7A8387;
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  font: 12px arial, sans-serif;
+  font: 14px arial, sans-serif;
   color: #555555;
   line-height: 21px;
   }
@@ -77,17 +77,16 @@ a:focus {
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
-  line-height: 1.5em;
   }
 h4, h5, h6 {
   }
 
-h1 { font-size: 24px; }
+
 h1 small { font-size: 13px; font-weight: normal; }
 h2 { 
-  font-weight: normal;
-  font-size: 16px;
-  padding: 5px 0 5px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
   }
 h2 small { font-size: 16px; font-weight: normal; }
 h3 { 
@@ -256,7 +255,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 .post-content {
-  padding: 52px 130px 60px 60px;
+  padding: 51px 130px 60px 60px;
   background: url(/assets/images/post-background.png);
   background-color: #fefff8;
 }
@@ -264,7 +263,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   color: #222222;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font: 30px bold arial, sans-serif;
   line-height: 42px;
 }
@@ -283,13 +282,13 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 .post-image:nth-child(odd) {
-  -webkit-transform: rotate(1deg);
-  transform: rotate(1deg);
+  -webkit-transform: rotate(0.5deg);
+  transform: rotate(0.5deg);
 }
 
 .post-image:nth-child(even) {
-  -webkit-transform: rotate(-1deg);
-  transform: rotate(-1deg);
+  -webkit-transform: rotate(-0.5deg);
+  transform: rotate(-0.5deg);
 }
 .post-content img {
     max-width: 100%;
