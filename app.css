@@ -48,15 +48,12 @@ html {
 ---------------------------------------------*/
 html,body {
   color: #7A8387;
-  background: #E7EEF2;
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  line-height: 1.5em;
+  font: 12px arial, sans-serif;
+  line-height: 21px;
   }
 
-body,
-textarea,
-input { font: 13px/20px 'OpenSans', sans-serif; }
 
 a {
   color: #526066;
@@ -105,12 +102,6 @@ h4 { font-size: 14px; }
 h5 { font-size: 13px; }
 h6 { font-size: 11px; font-weight: normal; }
 
-p {
-  font-size: 16px;
-  line-height: 1.5em;
-  margin-bottom: 0px; 
-  margin-top: 10px;
-  }
 /* Use border-box box model */
 
 * {
@@ -122,13 +113,15 @@ p {
 /* ------------------------------------------
   Globals
 ---------------------------------------------*/
-
+html {
+  background: url(/assets/images/background.png);
+}
 
 .header-nav,
 .footer-nav,
 .main-content,
 .page {
-  width: 1020px;
+  width: 720px;
   margin: 0 auto;
 }
 
@@ -144,7 +137,7 @@ p {
   -o-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid white;
-  min-width: 1020px;
+  min-width: 720px;
   height: 130px;  
 }
 
@@ -206,10 +199,10 @@ p {
 .main-content {
   background: white no-repeat;
   border-bottom: 1px solid white;
-  -moz-box-shadow: 0 0 3px #e1e1e3;
-  -webkit-box-shadow: 0 0 3px #E1E1E3;
-  -o-box-shadow: 0 0 3px #e1e1e3;
-  border: 1px solid #C3CCD0;
+  -moz-box-shadow: 0 0 3px #dedede;
+  -webkit-box-shadow: 0 0 3px #dedede;
+  -o-box-shadow: 0 0 3px #dedede;
+  border: 1px solid #dedede;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -263,15 +256,18 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 .post-content {
-  padding: 50px 60px 40px;
+  padding: 52px 130px 60px 60px;
+  background: url(/assets/images/post-background.png);
+  background-color: #fefff8;
 }
 .post-content .post-header{
-  color: #AAA;
+  color: #222222;
   -webkit-font-smoothing: antialiased;
   padding-bottom: 20px;
-  border-bottom: 1px solid #EBEBEB;
   position: relative;
   margin-bottom: 20px;
+  font: 30px bold arial, sans-serif;
+  line-height: 42px;
 }
 
 
