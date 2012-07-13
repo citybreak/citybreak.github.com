@@ -19,3 +19,13 @@ The Cathedral of Saint Sava or [Saint Sava Temple](http://en.wikipedia.org/wiki/
 
 ## History
 Three hundred years after the burning of Saint Sava's remains, in 1895, the Society for the Construction of the Cathedral of Saint Sava on Vračar was founded in Belgrade. Its goal was to build a cathedral on the place of the burning. A small church was built at the future place of the Cathedral, and it was later moved so the construction of the Cathedral could begin. In 1905, a public contest was launched to design the church; all five applications received were rejected as not being good enough. Soon, the breakout of the First Balkan War in 1912, and subsequent Second Balkan War and First World War stopped all activities on the construction of the church. After the war, in 1919, the Society was re-established. New appeals for designs were made in 1926; this time, it received 22 submissions. Though the first and third prize were not awarded, the second-place project, made by architect Aleksandar Deroko, was chosen for the building of the Cathedral.
+
+
+## Architecture
+
+1. Churches
+2. Houses
+3. Monuments
+
+* XV - XVI
+* XVII - XX

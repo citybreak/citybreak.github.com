@@ -246,7 +246,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 .post-meta{
   position: absolute;
-  left: 10px;
+  right: 10px;
 }
 
 .user-engaging-component{
@@ -255,6 +255,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 .post-content {
+  position: relative;
   padding: 51px 130px 60px 60px;
   background: url(/assets/images/post-background.png);
   background-color: #fefff8;
