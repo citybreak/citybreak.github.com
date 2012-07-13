@@ -135,7 +135,6 @@ html {
   margin: 0 25px;
 }
  
-
 .main-header .nav-item strong {
   font-size: 30px;
   line-height: 42px;
@@ -183,7 +182,7 @@ html {
   -webkit-box-shadow: 0 0 3px #dedede;
   -o-box-shadow: 0 0 3px #dedede;
   border: 1px solid #dedede;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 8px 20px -4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -226,9 +225,14 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   position: absolute;
   right: 10px;
   width: 100px;
-  border-left: 1px #b306cc solid;
+  border-left: 1px rgba(179, 6, 204, 0.3) solid;
   bottom: 0;
   top: 0;
+  font-size: 13px;
+  line-height: 21px;
+  color: #777777;
+  padding-top: 68px;
+  padding-left: 10px;
 }
 
 .user-engaging-component{
@@ -299,3 +303,11 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 .event-post .details span {
   font-weight: bold;
 }
+
+h2 { 
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  margin-top: 39px;
+  margin-bottom: 24px;
+
