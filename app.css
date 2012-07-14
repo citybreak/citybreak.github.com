@@ -214,6 +214,7 @@ html[data-page-type="sightseeing-page"] .page {
 
 .main-footer {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 
@@ -335,6 +336,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   min-height: 400px;
 }
 
+.post-content p {
+  margin-bottom: 10px;
+}
+
 .post-content .post-header{
   color: #222222;
   -webkit-font-smoothing: antialiased;
@@ -370,6 +375,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 .post-image:nth-child(even) {
   -webkit-transform: rotate(0.5deg);
   transform: rotate(0.5deg);
+}
+.post-content ul {
+  margin-top: 20px;
 }
 .post-content img {
   max-width: 100%;
