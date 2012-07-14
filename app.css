@@ -251,9 +251,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   background-color: white;
   border: 1px solid white;
   padding: 5px;
-  -moz-box-shadow: 0px 2px 15px #333;
-  -webkit-box-shadow: 0px 2px 15px #333;
-  box-shadow: 0px 2px 15px #333;
+  -moz-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
 }
 .image-stack-item {
   position: absolute;
@@ -261,9 +261,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   background: #fff;
   border: 1px solid #fff;
   padding: 5px;
-  -moz-box-shadow: 0px 2px 15px #333;
-  -webkit-box-shadow: 0px 2px 15px #333;
-  box-shadow: 0px 2px 15px #333;
+  -moz-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
   width: 100%;
   height: 100%;
 }
@@ -345,9 +345,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   background: #fff;
   border: 1px solid #fff;
   padding: 5px;
-  -moz-box-shadow: 0px 2px 15px #333;
-  -webkit-box-shadow: 0px 2px 15px #333;
-  box-shadow: 0px 2px 15px #333;
+  -moz-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
   margin: 0 auto 30px;
   line-height: 0;
   text-align: center;
