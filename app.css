@@ -114,6 +114,10 @@ html[data-page-type="tips-page"] .page
   width: 960px;
 }
 
+.home-link {
+  display: none;
+}
+
 
 /* Top Branding/Navigation */
 .main-header {
