@@ -74,6 +74,9 @@ a:focus {
   outline-offset: -2px;
   }
 
+header h1 {
+  margin-bottom: -4px;
+}
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
@@ -329,7 +332,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 .post-content {
   position: relative;
-  padding: 51px 130px 62px 60px;
+  padding: 51px 130px 57px 60px;
   background: url(/assets/images/post-background.png);
   background-color: #fefff8;
   margin-bottom: 50px;
@@ -337,14 +340,13 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 }
 
 .post-content p {
-  margin-bottom: 10px;
+  margin: 21px 0;
 }
 
 .post-content .post-header{
   color: #222222;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  margin-bottom: 17px;
   font: 30px bold arial, sans-serif;
   line-height: 42px;
 }
@@ -357,7 +359,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   -moz-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
   -webkit-box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
   box-shadow: 0px 3px 13px rgba(51, 51, 51, 0.5);
-  margin: 0 auto 30px;
+  margin: 21px auto 21px;
   line-height: 0;
   text-align: center;
   display: block;
@@ -385,13 +387,13 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 .event-post .map {
   text-align: center;
-  margin-top: -4px;
+  margin: 17px 0;
 }
 
 .event-post .details {
   background: #ebfdd4;
   border: 1px solid #78cc06;
-  padding: 10px 15px;
+  padding: 0 15px;
   width: 300px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -400,6 +402,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   -moz-box-shadow: 0 1px 0 #fff;
   box-shadow: 0 1px 0 white;
   margin-left: -70px;
+  margin-top: 27px;
 }
 
 .event-post .details span {

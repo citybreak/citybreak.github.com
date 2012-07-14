@@ -27,5 +27,7 @@ Three hundred years after the burning of Saint Sava's remains, in 1895, the Soci
 2. Houses
 3. Monuments
 
+With the neighboring residential area, fortress forms one of the local communities (mesna zajednica) within Belgrade, which had a population of 2,676 in 2002.
+
 * XV - XVI
 * XVII - XX
