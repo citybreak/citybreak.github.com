@@ -1,0 +1,13 @@
+---
+layout: blog_default
+type: tips-page
+---
+
+<article>
+  {% for item in site.categories.tips limit:40 offset:0 %}
+    <section class="travel-tip">
+        <h1>{{item.title}}</h1>
+        <p>{{item.answer}}</p>
+    </section>
+  {% endfor %}
+</article>
