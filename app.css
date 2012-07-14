@@ -398,7 +398,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   font-weight: bold;
 }
 
-nav .article-link {
+.related-post nav .article-link {
   display: block;
 }
 
