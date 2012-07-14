@@ -278,7 +278,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   background: url(/assets/images/post-background.png);
   background-color: #fefff8;
   margin-bottom: 50px;
+  min-height: 400px;
 }
+
 .post-content .post-header{
   color: #222222;
   -webkit-font-smoothing: antialiased;
