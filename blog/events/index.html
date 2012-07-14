@@ -4,8 +4,16 @@ layout: blog_default
 
 <nav class="article-navigation">
   {% for item in site.categories.events limit:40 offset:0 %}
-    <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-    <img width="160px" height="120px" src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}">
+    <a class="article-link article-preview" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}" itemscope itemtype="http://schema.org/Article">
+    	<meta itemprop="author" content="{{page.author}}"/>
+ 		<meta itemprop="description" content="{{page.abstract}}"/>
+    	<img src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}" itemprop="image" content="{{page.image}}">
+    	<section class="article-details">
+    		<h4 itemprop="name">{{item.title}}</h4>
+    		<time datetime="{{item.date}}" pubdate="true" itemprop="datePublished" content="{{item.date}}">
+        		{{ item.date | date: "%B %d, %Y" }}
+      		</time>
+    	</section>	
     </a>
   {% endfor %}
 </nav>

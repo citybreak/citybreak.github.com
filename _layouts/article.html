@@ -2,25 +2,13 @@
 layout: blog_default
 ---
 
-<section itemscope itemtype="http://schema.org/Article">
+<article itemscope itemtype="http://schema.org/Article" class="article-container">
   <meta itemprop="author" content="{{page.author}}"/>
   <meta itemprop="image" content="{{page.image}}"/>
   <meta itemprop="description" content="{{page.abstract}}"/>
 
-  <aside class="user-engaging-component">
-    <section class="social-sharing">
-      <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-    </section>
-
-    <section class="related-post">
-      <nav>
-      {% for item in site.categories.events limit:40 offset:0 %}
-        <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
-      {% endfor %}
-      </nav>
-    </section>  
-  </aside>
-
+  <div class="paper main-content"></div>
+  <div class="paper second main-content"></div>
   <article class="post-content main-content">
     <header class="post-header">
       <h1 itemprop="name">{{page.title}}</h1>
@@ -29,6 +17,17 @@ layout: blog_default
       <time datetime="{{page.date}}" pubdate="true" itemprop="datePublished" content="{{page.date}}">
         {{ page.date | date: "%B %d, %Y" }}
       </time>
+      <section class="social-sharing">
+        <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+      </section>
+
+      <section class="related-post">
+        <nav>
+        {% for item in site.categories.events limit:40 offset:0 %}
+          <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+        {% endfor %}
+        </nav>
+      </section>        
     </aside>
 
     <section class="post-body" itemprop="articleBody"> 
@@ -36,7 +35,7 @@ layout: blog_default
     </section> 
   </article>
 
-</section>
+</article>
 
 <aside class="post-comments">
   <div id="disqus_thread"></div>

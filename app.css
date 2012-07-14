@@ -159,6 +159,10 @@ html {
 
 .pager-nav a[rel="next"]{
   right: 30px;
+/*  background-image: url(/assets/images/left-arrow.svg);
+  display: block;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;*/
 }
 
 
@@ -176,8 +180,6 @@ html {
 
 
 .main-content {
-  background: white no-repeat;
-  border-bottom: 1px solid white;
   -moz-box-shadow: 0 0 3px #dedede;
   -webkit-box-shadow: 0 0 3px #dedede;
   -o-box-shadow: 0 0 3px #dedede;
@@ -217,11 +219,45 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   }
 
 
+/** Nav pages*/
+.article-preview {
+  margin: 20px 25px;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  -moz-box-shadow: 0px 2px 15px #333;
+  -webkit-box-shadow: 0px 2px 15px #333;
+  box-shadow: 0px 2px 15px #333;
+  display: inline-block;
+}
+
+.article-preview img {
+  width: 275px;
+  height: 183px;
+}
+
 /* ------------------------------------------
   Article
 ---------------------------------------------*/
-
-.post-meta{
+.article-container {
+  position: relative;
+}
+.paper {
+  width: 98%;
+  margin-left: -1px;
+  position: absolute;
+  background-color: #fefff8;
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  height: 320px;
+}
+.paper.second{
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  margin-left: -3px;
+  width: 97%;
+}
+.post-meta {
   position: absolute;
   right: 10px;
   width: 100px;
@@ -235,10 +271,6 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   padding-left: 10px;
 }
 
-.user-engaging-component{
-  position: absolute;
-  right: 10px;
-}
 
 .post-content {
   position: relative;
