@@ -176,19 +176,21 @@ html[data-page-type="sightseeing-page"] .page {
 
 .pager-nav a[rel="next"]{
   right: 30px;
-/*  background-image: url(/assets/images/left-arrow.svg);
-  display: block;
-  -o-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;*/
-}
-
+}  
 
 
 /** Search */
 #search {
+  display: none; 
   position: absolute;
   right: 0;
   top: 0;
+}
+#search .icon svg {
+  height: 25px;
+}
+#search .icon svg path {
+  fill: #B306CC!important; 
 }
 #search-results {
   display: none;
@@ -396,10 +398,14 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   font-weight: bold;
 }
 
+nav .article-link {
+  display: block;
+}
+
 h2 { 
   font-weight: bold;
   font-size: 20px;
   line-height: 21px;
   margin-top: 39px;
   margin-bottom: 24px;
-
+}
