@@ -1,5 +1,6 @@
 ---
 layout: blog_default
+type: events-page
 ---
 
 <nav class="article-navigation">
@@ -8,7 +9,11 @@ layout: blog_default
     	<meta itemprop="author" content="{{page.author}}"/>
  		<meta itemprop="description" content="{{page.abstract}}"/>
  		<meta itemprop="datePublished" content="{{page.date}}"/>
-    	<img src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}" itemprop="image" content="{{page.image}}">
+ 		<div class="image-stack-item first-image-item">
+    		<img src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}" itemprop="image" content="{{page.image}}">
+    	</div>		
+    	<div class="image-stack-item second-image-item"></div>
+    	<div class="image-stack-item third-image-item"></div>
     	<section class="article-details">
     		<h4 itemprop="name">{{item.title}}</h4>
     		<time datetime="{{item.eventDate}}">
