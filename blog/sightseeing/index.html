@@ -3,11 +3,24 @@ layout: blog_default
 type: sightseeing-page
 ---
 
-Sightseeing page
-
 <nav class="article-navigation">
   {% for item in site.categories.sightseeing limit:40 offset:0 %}
-    <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">{{item.title}}</a>
+    <a class="article-link article-preview" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}" itemscope itemtype="http://schema.org/Article">
+    	<meta itemprop="author" content="{{page.author}}"/>
+ 		<meta itemprop="description" content="{{page.abstract}}"/>
+ 		<meta itemprop="datePublished" content="{{page.date}}"/>
+ 		<div class="image-stack-item first-image-item">
+    		<img src="{{item.image}}" title="{{item.title}}" alt="{{item.title}}" itemprop="image" content="{{page.image}}">
+    	</div>		
+    	<div class="image-stack-item second-image-item"></div>
+    	<div class="image-stack-item third-image-item"></div>
+    	<section class="article-details">
+    		<h4 itemprop="name">{{item.title}}</h4>
+    		<time datetime="{{item.eventDate}}">
+        		{{ item.eventDate | date: "%B %d, %Y" }}
+      		</time>
+    	</section>	
+    </a>
   {% endfor %}
 </nav>
 
