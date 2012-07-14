@@ -108,7 +108,9 @@ html {
 
 html[data-page-type="events-page"] .page,
 html[data-page-type="cuisine-page"] .page,
-html[data-page-type="sightseeing-page"] .page {
+html[data-page-type="sightseeing-page"] .page,
+html[data-page-type="tips-page"] .page
+{
   width: 960px;
 }
 
@@ -419,4 +421,33 @@ h2 {
   line-height: 21px;
   margin-top: 39px;
   margin-bottom: 24px;
+}
+
+/** Travle tips */
+.travel-tip {
+  vertical-align: top;
+  margin: 5px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 7px;
+  background: url(/assets/images/post-background.png);
+  background-position-x: -30px;
+  background-color: #FEFFF8;
+  display: inline-block;
+  width: 275px;
+  -moz-box-shadow: 0 0 3px #dedede;
+  -webkit-box-shadow: 0 0 3px #DEDEDE;
+  -o-box-shadow: 0 0 3px #dedede;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 8px 20px -4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #DEDEDE;
+  height: 127px;
+}
+
+.travel-tip h1 {
+  margin-top: 23px;
+  padding-left: 15px;
+}
+.travel-tip p {
+   margin: 21px 0;
+   margin-top: 1px;
 }
