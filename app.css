@@ -469,7 +469,26 @@ body:before {/* thanks to Maleika (Kohoutec)*/
   font-weight: bold;
 }
 
-.related-post nav .article-link {
+.social-sharing i {
+  background-image: url(/assets/images/rateit.png);
+  width: 126px;
+  height: 63px;
+  display: block;
+}
+
+.related-posts i {
+  background-image: url(/assets/images/related.png);
+  width: 132px;
+  height: 79px;
+  display: block;
+  margin-left: -30px;
+}
+
+.related-posts nav {
+  margin-top: -30px;
+}
+
+.related-posts nav .article-link {
   display: block;
 }
 
