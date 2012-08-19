@@ -123,20 +123,22 @@ html[data-page-type="tips-page"] .page
 .main-header {
   position: absolute;
   top: 0;
-  width: 100%;
   z-index: 100;
   margin-bottom: 50px;
-  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid white;
-  min-width: 720px;
-  height: 130px;  
+  width: 100%;
+  height: 162px;  
 }
 
 .header-nav {
   position: relative;
+  background-image: url(/assets/images/wood.png);
+  width: 829px;
+  height: 162px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  margin: 0;
 }
 
 .nav-list .nav-item {
@@ -148,19 +150,71 @@ html[data-page-type="tips-page"] .page
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
-  margin: 0 25px;
+  margin: 0 15px;
 }
  
-.main-header .nav-item strong {
-  font-size: 30px;
-  line-height: 42px;
-}
-.nav-item .tagline {
+.nav-icon-stories.main {
+  background-image: url(/assets/images/nav-stories-icon.png);
   display: block;
-  font-size: 12px;
-  line-height: 12px;
-  color: #939799;
+  width: 79px;
+  margin: 0 34px;
+  height: 81px;
 }
+.nav-icon-stories.bottom {
+  background-image: url(/assets/images/nav-stories-btm.png);
+  display: block;
+  width: 164px;
+  height: 100px;
+  margin-top: -50px;
+}
+
+.nav-icon-tips.main {
+  background-image: url(/assets/images/nav-tips-icon.png);
+  display: block;
+  width: 78px;
+  margin: 0 -34px;
+  height: 82px;
+}
+.nav-icon-tips.bottom {
+  background-image: url(/assets/images/nav-tips-btm.png);
+  display: block;
+  width: 99px;
+  height: 109px;
+  margin-top: -75px;
+}
+
+
+.nav-icon-events.main {
+  background-image: url(/assets/images/nav-events-icon.png);
+  display: block;
+  width: 72px;
+  margin: 0 40px;
+  height: 62px;
+}
+.nav-icon-events.bottom {
+  background-image: url(/assets/images/nav-events-btm.png);
+  display: block;
+  width: 167px;
+  height: 97px;
+  margin-top: -40px;
+}
+
+
+.nav-icon-cuisine.main {
+  background-image: url(/assets/images/nav-cuisine-icon.png);
+  display: block;
+  width: 64px;
+  margin: 0 20px;
+  height: 70px;
+}
+.nav-icon-cuisine.bottom {
+  background-image: url(/assets/images/nav-cuisine-btm.png);
+  display: block;
+  width: 126px;
+  height: 88px;
+  margin-top: -40px;
+}
+
 
 .pager-nav a {
   position: absolute;

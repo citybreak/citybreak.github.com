@@ -6,7 +6,7 @@ author_twitter: citybreakhostel
 author: CityBreak
 categories:
 - blog
-- sightseeing
+- stories
 published: true
 image: http://upload.wikimedia.org/wikipedia/commons/b/b6/Tvdjava_iz_vazduha.jpg
 ---

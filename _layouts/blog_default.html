@@ -8,7 +8,7 @@
   <link rel='shortcut icon' href='{{site.baseurl}}/images/favicon.ico' type='image/x-icon' />
   <link rel='stylesheet' href='{{site.baseurl}}/app.css'>
   <script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/assets/jquery-1.8.0.js"></script>
   <script src="/all.js"></script>
 </head>
 <body>
@@ -17,29 +17,33 @@
       <a class="home-link" href="{{site.baseurl}}/">City Break</a>
       <ul class="nav-list">
          <li class="nav-item">
+            <a href="{{site.baseurl}}/blog/stories" class="nav-link" id="stories-nav-link">            
+              <i class="nav-icon-stories top"></i>
+              <i class="nav-icon-stories main"></i>
+              <i class="nav-icon-stories bottom"></i>
+            </a>
+         </li>  
+         <li class="nav-item">
+            <a href="{{site.baseurl}}/tips" class="nav-link" id="tips-nav-link">            
+              <i class="nav-icon-tips top"></i>
+              <i class="nav-icon-tips main"></i>
+              <i class="nav-icon-tips bottom"></i>
+            </a>
+         </li>                  
+         <li class="nav-item">
             <a href="{{site.baseurl}}/blog/events" class="nav-link" id="events-nav-link">            
-              <i class="nav-icon-home"></i>
-              <i class="nav-icon"></i>
-              <strong>Events</strong>
-              <span class="tagline">Events in Belgrade.</span>
+              <i class="nav-icon-events top"></i>
+              <i class="nav-icon-events main"></i>
+              <i class="nav-icon-events bottom"></i>
             </a>
          </li>
          <li class="nav-item">
             <a href="{{site.baseurl}}/blog/cuisine" class="nav-link" id="cuisine-nav-link">            
-              <i class="nav-icon-home"></i>
-              <i class="nav-icon"></i>
-              <strong>Cuisine</strong>
-              <span class="tagline">Cuisine in Belgrade.</span>
+              <i class="nav-icon-cuisine top"></i>
+              <i class="nav-icon-cuisine main"></i>
+              <i class="nav-icon-cuisine bottom"></i>
             </a>
          </li>
-         <li class="nav-item">
-            <a href="{{site.baseurl}}/blog/sightseeing" class="nav-link" id="sightseeing-nav-link">            
-              <i class="nav-icon-home"></i>
-              <i class="nav-icon"></i>
-              <strong>Sightseeing</strong>
-              <span class="tagline">Sightseeing in Belgrade.</span>
-            </a>
-         </li> 
       </ul>
       <div id="search">
         <a href="#search">

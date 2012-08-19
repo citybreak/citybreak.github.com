@@ -6,7 +6,7 @@ author_twitter: citybreakhostel
 author: CityBreak
 categories:
 - blog
-- sightseeing
+- stories
 published: true
 image: http://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ada_Ciganlija_4.JPG/800px-Ada_Ciganlija_4.JPG
 ---
