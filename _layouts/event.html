@@ -5,22 +5,24 @@ layout: article
 <div class="event-post" itemscope itemtype="http://schema.org/Event">
   <div class="map">
     <a href="http://maps.google.com/maps?q={{page.eventPlace}}&amp;t=m&amp;z=15" target="_blank" class="post-image">
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center={{page.eventPlace}}&amp;zoom=15&amp;size=500x200&amp;sensor=false&amp;scale=1" height="200">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center={{page.eventPlace}}&amp;zoom=15&amp;size=500x200&amp;sensor=false&amp;scale=1" height="203">
     </a>
   </div>
   <p>
       {{content}}
   </p>
   <div class="details">
-    <p>
-      <span>When:</span>
-      <time itemprop="startDate" content="#{page.eventDate}" datetime="#{page.eventDate}">
-        {{ page.eventDate | date: "%B %d, %Y, at %H:%M" }}
-      </time>
-    </p>
-    <p>  
-      <span>Where:</span>
-      <a itemprop="location" href="http://maps.google.com/maps?q={{page.eventPlace}}">{{page.eventPlace}}</a>.
-    </p>
+    <div>
+      <p>
+        <span>When:</span>
+        <time itemprop="startDate" content="#{page.eventDate}" datetime="#{page.eventDate}">
+          {{ page.eventDate | date: "%B %d, %Y, at %H:%M" }}
+        </time>
+      </p>
+      <p>  
+        <span>Where:</span>
+        <a itemprop="location" href="http://maps.google.com/maps?q={{page.eventPlace}}">{{page.eventPlace}}</a>.
+      </p>
+    </div>
   </div>
 </div>

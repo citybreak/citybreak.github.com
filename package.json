@@ -1,0 +1,21 @@
+{
+  "name": "citybreak",
+  "version": "0.0.1",
+  "description": "Site for City Break hostel",
+  "main": "all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/citybreak/citybreak.github.com.git"
+  },
+  "keywords": [
+    "citybreakhostel",
+    "hostel",
+    "belgrade",
+    "blog"
+  ],
+  "author": "CityBreak",
+  "license": "MIT"
+}
