@@ -7,21 +7,21 @@ layout: blog_default
   <meta itemprop="image" content="{{page.image}}"/>
   <meta itemprop="description" content="{{page.abstract}}"/>
 
-  <div class="paper main-content"></div>
-  <div class="paper second main-content"></div>
+  <!-- <div class="paper main-content"></div>
+  <div class="paper second main-content"></div> -->
   <article class="post-content main-content">
     <header class="post-header">
       <h1 itemprop="name">{{page.title}}</h1>
     </header>
     <aside class="post-meta">
-      <time datetime="{{page.date}}" pubdate="true" itemprop="datePublished" content="{{page.date}}">
+      <time datetime="{{page.date}}" pubdate="true" itemprop="datePublished" content="{{page.date}}">Posted on 
         {{ page.date | date: "%B %d, %Y" }}
       </time>
-      <section class="social-sharing">
+      <!-- <section class="social-sharing">
         <i class="panel-header-icon" title="Rate it"></i>
         <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-      </section>       
-      <section class="related-posts">
+      </section>   -->     
+      <!-- <section class="related-posts">
         <i class="panel-header-icon" title="Related"></i>
         <nav>
         {% for item in site.categories.events limit:40 offset:0 %}
@@ -37,7 +37,7 @@ layout: blog_default
           </a>
         {% endfor %}
         </nav>
-      </section>             
+      </section>   -->           
     </aside>
 
     <section class="post-body" itemprop="articleBody"> 
@@ -47,7 +47,7 @@ layout: blog_default
 
 </article>
 
-<aside class="post-comments">
+<!-- <aside class="post-comments">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -64,4 +64,4 @@ layout: blog_default
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
-</aside> 
+</aside>  -->

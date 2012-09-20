@@ -9,41 +9,14 @@
   <link rel='stylesheet' href='/assets/index.css'>
   <!-- font -->
   <link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
   <!-- font end -->
   <script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js"></script>
   <script src="/assets/jquery-1.8.0.js"></script>
   <script src="/all.js"></script>
 </head>
 <body>
-  <nav class="menu-nav">
-    <a class="home-link" href="{{site.baseurl}}/">City Break</a>
-    <ul class="nav-list">
-      <li>
-        <div id="search">
-          <a href="#search">
-            <i class="icon search waiting">{% include search-icon.svg %}</i><i class="icon close searching"></i>
-          </a>
-          <div class="searching"><i class="icon search"></i><input type="text"></div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link" id="all-nav-link">All posts</a>
-      </li>
-      <li class="nav-item">
-        <a href="{{site.baseurl}}/blog/stories" class="nav-link" id="stories-nav-link">Stories</a>
-      </li>  
-      <!-- <li class="nav-item">
-        <a href="{{site.baseurl}}/tips" class="nav-link" id="tips-nav-link"></a>
-      </li>      -->             
-      <li class="nav-item">
-        <a href="{{site.baseurl}}/blog/events" class="nav-link" id="events-nav-link">Events</a>
-      </li>
-      <li class="nav-item">
-        <a href="{{site.baseurl}}/blog/cuisine" class="nav-link" id="cuisine-nav-link">Cuisine</a>
-      </li>
-    </ul>       
-  </nav>
-  <nav class="pager-nav"> 
+  <!-- <nav class="pager-nav"> 
     {% if page.previous.url %} 
       <a rel="prev" href="{{page.previous.url}}" title="Previous Post: 
 {{page.previous.title}}">
@@ -57,10 +30,67 @@
         {% include right-arrow.svg %}
       </a> 
     {% endif %} 
-  </nav> 
+  </nav>  -->
 
   <div class="page">
-    {{content}}
+
+    <nav class="menu-nav">
+      <ul class="nav-list">
+        <li id="home-link">
+          <a class="home-link" href="{{site.baseurl}}/">City Break</a>
+        </li>
+        <li id="search">
+          <input type="text" alt="Input for site searching">
+          <input type="submit" value="search">
+          <!-- <div id="search">
+            <a href="#search">
+               <i class="icon search waiting">{% include search-icon.svg %}</i><i class="icon close searching"></i> -->
+            <!-- </a>
+            <div class="searching">
+              <i class="icon search">{% include search-icon.svg %}</i>
+              <input type="text"></div>
+          </div> -->
+        </li>
+        <div class="border"></div>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="all-nav-link">All posts</a>
+          <div class="arrow">
+            <div class="arrow-front"></div>
+            <div class="arrow-back"></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="{{site.baseurl}}/blog/stories" class="nav-link" id="stories-nav-link">Stories</a>
+          <div class="arrow">
+            <div class="arrow-front"></div>
+            <div class="arrow-back"></div>
+          </div>
+        </li>  
+        <!-- <li class="nav-item">
+          <a href="{{site.baseurl}}/tips" class="nav-link" id="tips-nav-link"></a>
+        </li>      -->             
+        <li class="nav-item">
+          <a href="{{site.baseurl}}/blog/events" class="nav-link" id="events-nav-link">Events</a>
+          <div class="arrow">
+            <div class="arrow-front"></div>
+            <div class="arrow-back"></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="{{site.baseurl}}/blog/cuisine" class="nav-link" id="cuisine-nav-link">Cuisine</a>
+          <div class="arrow">
+            <div class="arrow-front"></div>
+            <div class="arrow-back"></div>
+          </div>
+        </li>
+      </ul>
+      <div class="menu-bottom"></div>       
+    </nav>
+
+    <div class="article-page">
+      {{content}}
+    </div>
+    
   </div>
 
   <div id="search-results">
